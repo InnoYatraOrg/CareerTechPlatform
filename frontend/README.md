@@ -90,3 +90,42 @@ When creating image files, it is recommended to store them in a dedicated folder
   
 - **For icons**: If the images are icons, you can store them in the existing `src/Icons` folder.
   - Path: `CareerTechPlatform/src/Icons/`
+
+
+  file structure
+  CareerTechPlatform/
+│── backend/               # Backend (Python - FastAPI/Django)
+│   ├── app/               # Main backend application
+│   │   ├── models/        # Database models (Users, Jobs, Messages, etc.)
+│   │   ├── routes/        # API endpoints (Auth, Jobs, Messaging, etc.)
+│   │   ├── services/      # Business logic & controllers
+│   │   ├── database/      # DB connections (MongoDB/MySQL)
+│   │   ├── utils/         # Helper functions, JWT auth, etc.
+│   │   ├── main.py        # Entry point (FastAPI or Django setup)
+│   ├── requirements.txt   # Python dependencies
+│   ├── Dockerfile         # Backend Docker setup
+│
+│── frontend/              # Frontend (React.js + Tailwind CSS)
+│   ├── public/            # Static assets (favicons, manifest, etc.)
+│   ├── src/               # Source code
+│   │   ├── assets/        # Images, icons, fonts
+│   │   ├── components/    # Reusable UI components (buttons, modals, etc.)
+│   │   ├── pages/         # Main pages (Jobs, Messaging, Learning, etc.)
+│   │   ├── hooks/         # Custom React hooks
+│   │   ├── context/       # Context API for state management
+│   │   ├── services/      # API calls (fetch, axios)
+│   │   ├── utils/         # Helper functions
+│   │   ├── App.jsx        # Main app file
+│   │   ├── index.js       # React entry point
+│   ├── tailwind.config.js # Tailwind configuration
+│   ├── package.json       # Dependencies & scripts
+│   ├── Dockerfile         # Frontend Docker setup
+│
+│── database/              # Database scripts & migrations
+│   ├── migrations/        # DB migrations (if using MySQL/SQLite)
+│   ├── seed_data/         # Sample job postings, users, etc.
+│
+│── docker-compose.yml     # Docker Compose for full-stack setup
+│── .gitignore             # Ignore unnecessary files in Git
+│── README.md              # Main project readme
+
